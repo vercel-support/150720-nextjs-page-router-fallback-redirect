@@ -1,9 +1,6 @@
 import MenuComponent from '/components/MenuComponent';
 import { useRouter } from 'next/router';
 
-export const runtime = 'experimental-edge'; // 'nodejs' (default) | 'experimental-edge'
-// The edge runtime is currently not compatible with ISR, although you can leverage stale-while-revalidate by setting the cache-control header manually.
-
 export default function Page({ slug, time }) {
   const router = useRouter();
   return (
